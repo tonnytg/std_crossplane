@@ -1,0 +1,11 @@
+# gcsbucket.yaml
+apiVersion: storage.gcp.crossplane.io/v1beta1
+kind: Bucket
+metadata:
+  name: example-bucket
+spec:
+  forProvider:
+    location: US
+    storageClass: STANDARD
+  providerConfigRef:
+    name: default
